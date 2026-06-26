@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use BrainFuse-LLM, please cite the associated paper."
+title: "BrainFuse-LLM: Subject-Agnostic fMRI-to-Text Decoding with Neuro-Enhanced Encoding and Expert Modulation"
+authors:
+  - family-names: Shen
+    given-names: Zehao
+  - family-names: Jiang
+    given-names: Maowei
+  - family-names: Qi
+    given-names: Shuo
+  - family-names: Zeng
+    given-names: Weiming
+year: 2026
+repository-code: "https://github.com/Zero-coder/BrainFuse-LLM"
+license: MIT
