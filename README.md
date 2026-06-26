@@ -104,7 +104,7 @@ See [docs/reproducibility.md](docs/reproducibility.md) and [docs/baselines.md](d
 
 ## Related Work and Baselines
 
-The repository structure and documentation style are inspired by recent public brain-decoding repositories such as MindLLM, BrainChat, UniBrain, UMBRAE, and MindBridge. We only reuse public documentation conventions and do not copy implementation code from these projects.
+The repository follows standard open-source conventions for brain-decoding and multimodal learning projects. It provides documentation, configuration templates, lightweight reference modules, and reproducibility notes without redistributing restricted datasets or model weights.
 
 ## Citation
 
