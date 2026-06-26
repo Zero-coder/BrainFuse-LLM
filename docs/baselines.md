@@ -9,7 +9,6 @@ BrainFuse-LLM is compared with both subject-specific and subject-agnostic fMRI d
 - BrainChat
 - UniBrain
 - UMBRAE
-- MindLLM
 
 ## fMRI-QA Baselines
 
@@ -18,7 +17,6 @@ BrainFuse-LLM is compared with both subject-specific and subject-agnostic fMRI d
 - BrainChat
 - MindBridge
 - UniBrain
-- MindLLM
 
 ## Documentation References
 
