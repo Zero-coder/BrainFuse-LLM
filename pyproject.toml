@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brainfuse-llm"
+version = "0.1.0"
+description = "Subject-agnostic fMRI-to-text decoding with neuro-enhanced encoding and expert modulation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "BrainFuse-LLM Authors" }
+]
+dependencies = [
+  "numpy>=1.24.0",
+  "torch>=2.2.0",
+  "transformers>=4.42.0",
+  "peft>=0.11.0",
+  "pyyaml>=6.0",
+  "tqdm>=4.66.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["brainfuse*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
