@@ -1,0 +1,36 @@
+model:
+  llm_name_or_path: lmsys/vicuna-7b-v1.5
+  freeze_llm: true
+  fmri_token_count: 128
+  query_count: 1024
+  encoder_dim: 256
+  llm_hidden_dim: 4096
+  value_kernel_sizes: [1, 3, 5]
+  region_vocab_sizes: [512, 1024]
+  lora_rank: 8
+  lora_alpha: 16
+  num_lora_experts: 4
+  top_k_experts: 1
+
+data:
+  dataset: nsd
+  train_subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+  heldout_subject: null
+  max_voxels: 18000
+  tasks: [captioning, coco_qa, vg_qa, vqa_v2, a_okvqa, ok_vqa, tallyqa]
+
+training:
+  optimizer: adamw
+  learning_rate: 5.0e-5
+  weight_decay: 0.009
+  beta1: 0.9
+  beta2: 0.996
+  batch_size: 64
+  max_epochs: 10
+  grad_clip_norm: 1.0
+  precision: bf16
+
+generation:
+  decoding: greedy
+  max_new_tokens: 64
+  temperature: 0.0
